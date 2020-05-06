@@ -1,0 +1,530 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+  <section id="intro" class="clearfix">
+    <div class="container">
+
+      <div class="intro-img">
+        <img src="{% static 'img/intro-img.svg' %}" alt="" class="img-fluid">
+      </div>
+
+      <div class="intro-info">
+        <h2>We Provide<br><span><a href="#portfolio">Solutions<a></span><br>For Your Business Promotion</h2>
+        <div>
+          {% if user.is_authenticated %}
+          <a href="{% url 'account_logout' %}" class="btn-services scrollto">Logout</a>
+          {% else %}
+          <a href="{% url 'account_login' %}" class="btn-get-started scrollto">Login</a>
+          <a href="{% url 'account_signup' %}" class="btn-services scrollto">Sign up</a>
+          {% endif %}
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p>Think Creative, Do Effective</p>
+        </header>
+
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <p>
+              Ultra creation provides a platform to purchase a website Like a product within 3 days customers have a
+              great platform listing our products and other information their own website
+              customers have an admin panel which contains all the information about the business and it can be handled
+              easily.
+              This is a world’s first platform which gives you a website is a product and it can be handled easily and
+              you won't pay for any service like plugins so you will not pay for any other services so this is your own
+              website and it depends on your handling similar to the product Because the condition of the product
+              depends on its owner
+              Our company gives you a business solution for your website at free of cost We provide solutions for all
+              your problems as we believe customer to be our family member number we believe in the philosophy, not in
+              the business they relieve you from the problem but we terminate it
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Why To Buy Your Own Website</a></h4>
+              <p class="description">You have to buy your own website, it means that you can run it in your own way and
+                you can develop it in your own way, you do not have to pay any kind of charge to any company, so we can
+                increase the profit. And we can reduce the cost of promotion, by this we can pay more attention to the
+                quality of our product and more people in the product at a lower price Can reach</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">How To Develop Your Ideology</a></h4>
+              <p class="description">You can develop your ideas with us and your business can reach the pinnacle for
+                which you have to share your ideas with us and a good interface will be prepared for you which will help
+                you to take your business to the top. Will do</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">How To Create your own Empire</a></h4>
+              <p class="description">You can take your business to a height where you can not even see your eyes. You
+                can produce new ideas for your business. You can create ideas for your business and make your business a
+                new height every day. But every step you can take makes your empire big and you can cover every corner
+                of the world through your website and make the world smaller for you.</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+            <img src="{% static 'img/about-img.svg' %}" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="{% static 'img/about-extra-1.svg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4>What is special about our website</h4>
+            <p>
+              We are building our website using the DJango framework using Python because it is the latest technology in
+              the world, by which it has laid the foundation of a big website like Instagram which is very good in terms
+              of performance and its content is attractive while we If you create a website using any other technology
+              So it has more amount of cookies and bugs which are harmful to our website, which works to prevent our
+              website from reaching more people. Our website is code-based, which we can change anytime according to the
+              customer To do Percy change, if we review the website made by any other technology then it is
+              difficult.and for this, we often have to pay big money which is not possible for any retailer and small
+              business. Our website also plays a very good role in terms of SEO. Our website content does not allow your
+              customer to exit your website. While there are many other websites, they are sometimes rejected by Google
+              Adsense.</p>
+            <p>
+              <br>1 Easy to handle<br>
+              <br>2 Easy to update<br>
+              <br>3 Made by Python due to which it is easy to update<br>
+              <br>4 Attract the customer by showing effective performance<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="{% static 'img/about-extra-2.svg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+            <h4>What is need to purchase</h4>
+            <p>
+              If we want to grow our business, then we have to reach more people and we have internet is a big tool to
+              reach more people, using it we can reach our business to more people but nowadays all kinds of business in
+              the market For this, we need to work on our strong content so that we can attract someone towards our
+              business. To increase your business so we need this type of website
+            </p>
+            <p>
+              This website also frees you from your extra tasks like placing the details of the order, where has the
+              order been, who has made the payment, etc. Information can be made available through the website so that
+              you can maintain any type of diary notes etc. You do not have to try for this, you can make your work even
+              simpler and comfortable
+            </p>
+            <p>
+              Do you also want to spread your market to every corner of the world, whose name has not been heard till
+              date, then you are going to need this website, through which you can list your business in every corner of
+              the world, whose staff You have not heard the name till date, it can help you to reach every corner of the
+              world.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Services</h3>
+          <p>we are providing websites like a products</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="#portfolio">Portfolio Website</a></h4>
+              <p class="description">The portfolio is a type of website whereby you present your skills online in a detailed
+                way that affects the customers who value your skills and hire you for a project. That quote website will
+                become your own identity. Through this, you can give information about your skills to a lot of
+                customers, it can be used to spread your own brand to the people. Such a good way</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-cart-outline" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="#portfolio">E-commerce</a></h4>
+              <p class="description">An E-commerce website is a type of website through which you can reach your shop in
+                every corner of the world and show your product and sell it. This website can help your business to grow
+                twice a day. The main task is to tell the product quality and make it different from other products
+                being made in the market and explain its usefulness. The very best way to reach</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-people-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="#portfolio">Management System</a></h4>
+              <p class="description">The management system is a type of data-driven system that monitors the activity going
+                on in the organization and provides information from time to time, we can use it to increase the profit
+                revenue of our organization and by this we can You can also control the activity happening in the
+                organization.UltraCreation is creating a system for school, college and organization</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="#portfolio">Booking System</a></h4>
+              <p class="description">We are creating a system to increase your business, which enables you to go to the
+                customers of the market, who do not even know about your service, this system enables the customers to
+                travel from every corner of the world. And it works to do your work in the right way and also to give
+                the right information to your customers.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
+              <h4 class="title"><a href="#portfolio">Blog Website</a></h4>
+              <p class="description">A blog website is a type of website that we use often to express our views and now
+                a days a blog website is also a good business as it keeps searching for all the right platforms for all
+                kinds of information and recreation and assess it google This is done through adsense, which charges the
+                advertisements given by companies on our website</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-volume-high" style="color: #4680ff;"></i></div>
+              <h4 class="title"><a href="#portfolio">Informative Website</a></h4>
+              <p class="description">Information website today is the most searched website on the internet because
+                today all the people try to gather information for government jobs and all types of government schemes
+                also find information through these websites.You can easily update your website and give all new
+                information in it, then you can register it with Google Adsense and develop a good business.
+              </P>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>Why choose us?</h3>
+          <p>We Are Providing Your Own Website Without Any Hidden Charges </p>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+              <i class="fa fa-diamond"></i>
+              <div class="card-body">
+                <h5 class="card-title">Best performance</h5>
+                <p class="card-text">Our websites give best performance according to google Adsense.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+              <i class="fa fa-language"></i>
+              <div class="card-body">
+                <h5 class="card-title">Best Content</h5>
+                <p class="card-text">Our websites content give you good ranking on google search engine.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+              <i class="fa fa-mobile"></i>
+              <div class="card-body">
+                <h5 class="card-title">Mobile Friendly</h5>
+                <p class="card-text">Our websites consume less loading time rather than other platform websites.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">274</span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">421</span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,364</span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="portfolio" class="clearfix">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Products</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-Informative">Informative</li>
+              <li data-filter=".filter-Ecommerce">Ecommerce</li>
+              <li data-filter=".filter-Management">Management</li>
+              <li data-filter=".filter-Blog">Blog</li>
+              <li data-filter=".filter-Affiliate">Affiliate</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+          {% for item in items %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-{{ item.category }}" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <img src="{{ item.img.url }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></h4>
+                <p>{{ item.category }}</p>
+                <div>
+                  <a href="{{ item.img.url }}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="{{ item.url }}" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+    </section>
+    
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="testimonials" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+          <p>They are happy to our performance to grow their business</p>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            
+            <div class="owl-carousel testimonials-carousel wow fadeInUp">
+              {% for testi in testis %}
+              <div class="testimonial-item">
+                
+                <img src="{{ testi.img.url }}" class="testimonial-img" alt="">
+                <h3>{{ testi.name }}</h3>
+                <h4>{{ testi.prof }}</h4>
+                <p>
+                  {{ testi.disc }}
+                </p>
+                
+              </div>
+              {% endfor %}
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>
+            We are conscientious working professional developers and team coordinators who know our business, 
+            exceed expectations and understand customer ambitions along the way. We do this through teamwork, 
+            transparency, mutual respect, and accountability. Our good qualities include observing the highest 
+            ethical standards in everything we do and also governing them at the right time.By treating our 
+            customers, co-workers, and suppliers fairly, honestly, and with respect, we are one of our key 
+            attributes to earn their trust and share lasting success and failure by leading our partners to 
+            the right path. We complete our work by building confidence and teaching the team to work on the 
+            right path.
+          </p>
+        </div>
+        
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 wow fadeInUp">
+              <div class="owl-carousel testimonials-carousel wow fadeInUp">
+                {% for member in members %}
+                  <div class="member">
+                    <img src="{{ member.img.url }}" class="img-fluid" alt="">
+                    <div class="member-info">
+                      <div class="member-info-content">
+                        <h4>{{ member.name }}</h4>
+                        <span>{{ member.prof }}</span>
+                        <div class="social">
+                          <a href="{{ member.social_link_one }}"><i class="fa fa-twitter"></i></a>
+                          <a href="{{ member.social_link_two }}"><i class="fa fa-facebook"></i></a>
+                          <a href="{{ member.social_link_three }}"><i class="fa fa-instagram"></i></a>
+                          <a href="{{ member.social_link_four }}"><i class="fa fa-linkedin"></i></a>
+                          <a href="{{ member.social_link_five }}"><i class="fa fa-youtube"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="section-bg">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Our CLients</h3>
+          <p>They are making money and growing thier businesses with our websites and applications</p>
+        </div>
+        
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+          {% for clint in clints %}
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="{{ clint.logo.url }}" class="img-fluid" alt="">
+            </div>
+          </div>
+          {% endfor %}
+        
+      </div>
+
+    </section>
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-6">
+            <div class="map mb-4 mb-lg-0">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.94061869736345!2d78.35497871838845!3d22.74589186166507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397e433b41307a13%3A0x87a2ef86e1a72522!2sBhagat%20Singh%20Ward%2C%20Pipariya%2C%20Madhya%20Pradesh%20461775!5e0!3m2!1sen!2sin!4v1578465539115!5m2!1sen!2sin"
+                frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-5 info">
+                <i class="ion-ios-location-outline"></i>
+                <p>Pipariya</p>
+              </div>
+              <div class="col-md-4 info">
+                <i class="ion-ios-email-outline"></i>
+                <p>ishwarjethwaniillustration@gmail.com</p>
+              </div>
+              <div class="col-md-3 info">
+                <i class="ion-ios-telephone-outline"></i>
+                <p>8770369046</p>
+              </div>
+            </div>
+
+            <div class="form">
+              <div id="sendmessage"><p>{{ success }}</p></div>
+              <div id="errormessage"></div>
+              <form action="{% url 'contact' %}" method="POST" role="form" class="contactForm">
+                {% csrf_token %}
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                      data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                      data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                    data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button class="btn btn-outline-primary" type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+{% endblock %}

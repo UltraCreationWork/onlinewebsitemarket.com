@@ -1,0 +1,30 @@
+{% extends "account/base.html" %}
+{% load i18n %}
+{% load account socialaccount %}
+{% load bootstrap4 %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+{% providers_media_js %}
+{% load static %}
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-90 p-b-30">
+				<div class="login100-pic js-tilt" data-tilt>
+					<p>Login With</p>
+					<a  href='{% provider_login_url "facebook" method="js_sdk" %}' type="button" class="btn btn-outline-primary"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a  href="{% provider_login_url 'google' %}"type="button" class="btn btn-outline-danger"><i class="fa fa-google" aria-hidden="true"></i></a>
+					<img src="{% static 'img/signup.png' %}" alt="IMG">
+				</div>
+				<form action="." method="post">
+					{% csrf_token %}
+					{% bootstrap_form form %}
+					<button  class="btn btn-primary btn-rounded" type="submit">Sign up</button>
+					<p style="font-size: medium;">If you have alredy registered please login</p>
+					<a href="{% url 'account_login' %}" class="btn btn-outline-primary waves-effect">Login</a>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}

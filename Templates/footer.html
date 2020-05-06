@@ -1,0 +1,66 @@
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>UltraCreation</h3>
+            <p>Ultra Creation is a company that creates a website for you and promotes your business through which you
+              can reach your business in a simple and comfortable way in every corner of the world. Give the same
+              principle of our company which is to enhance our client's business and it gives money from every corner of
+              the world without any problem.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'home' %}#about">About us</a></li>
+              <li><a href="{% url 'home' %}#services">Our Servises</a></li>
+              <li><a href="{% url 'home' %}#portfolio">Products</a></li>
+              <li><a href="{% url 'home' %}#team">Team</a></li>
+              <li><a href="{% url 'home' %}#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Pipariya<br>Hoshangabad,<br>Madhya Pradesh<br>
+              India<br>
+              <a href="tel:+918770369046" class="btn btn-outline-light">+91-8770369046</a><br>
+              <a href="mailto:ishwarjethwaniillutration@gmail.com" class="btn btn-outline-light">Mail Us</a><br>
+            </p>
+            <div class="social-links">
+              <a href="https://twitter.com/ultra_creation" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/onlineservi" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/ultracreation12/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCJgW-baFjXRIwv6LOQe57XQ" class="youtube"><i
+                  class="fa fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/ultra-creation-55baab147/" class="linkedin"><i
+                  class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Other Services</h4>
+            <p>
+              1 Business Promotion<br>
+              2 Youtube Video Creator<br>
+              3 YouTube channel maintainers<br>
+              4 Bulk Email Service<br>
+              5 Bulk SMS Service<br>
+              6 calling Service<br>
+            </p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'account_logout' %}" class="btn btn-outline-light">Logout</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="btn btn-outline-light">Sign up</a>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+</footer>
